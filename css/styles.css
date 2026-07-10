@@ -12,6 +12,7 @@
     --primary-color: #EBC0B9;
     --light-color: #efefef;
     --dark-color: #3c3c3c;
+    --green-color:rgba(156, 199, 199, 0.8);
     --general-transition: all .4s ease;
 }
 
@@ -56,39 +57,130 @@ a {
     font-family: var(--secondary-font);
 }
 
-img{
+img {
     width: 100%;
     max-width: 100%;
 
 }
-ul{
+
+ul {
     list-style: none;
 
 }
 
-.container{
+.container {
     width: 100%;
-    max-width: 114rem; /*bootstrap genel kullanılan büyüklük*/
+    max-width: 114rem;
+    /*bootstrap genel kullanılan büyüklük*/
     margin: 0 auto;
 }
 
+
+/** CUSTOM  Classes **/
+.sec-grid {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position:relative;
+    
+}
+
+.vertical-title{
+    font-size: 2rem;
+    font-family:var(--secondary-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    word-spacing: 1rem;
+    display: inline-block;
+    transform:rotate(-90deg);
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    
+}
+
+.vertical-title-right{
+    color: var(--light-color);
+    left: 95%;
+    transform: rotate(90deg);
+    white-space: nowrap;
+
+}
+
+.btn-general{
+    font-family: var(--secondary-font);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin:2rem 0;
+    padding: .5rem 2rem;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    border-radius: 2rem;
+    
+}
+
+.btn-light {
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    transition: var(--general-transition);
+
+}
+.btn-light:hover {
+    color: var(--light-color);
+    background-color: var(--primary-color);
+
+}
+
+.btn-dark{
+    color:var(--light-color);
+    border: 2px solid var(--light-color);
+    transition: var(--general-transition);
+}
+
+.btn-dark:hover {
+    border: 2px solid var(--light-color);
+    background-color: var(--primary-color);
+}
+
+.horizontal-title {
+    padding-bottom: 2rem;
+    font-size: 4rem;
+    font-weight: 300;
+    color: var(--green-color);
+
+}
+
+.pri-background{
+    background-color: var(--green-color);
+}
+
+.light-color{
+    color: aliceblue;
+}
+
+
+
 /**Hero Section **/
 
-#hero{
+#hero {
     width: 100%;
     background-repeat: no-repeat;
 
-    background: linear-gradient(0deg, rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
 }
-.hero-content{
+
+.hero-content {
     position: absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%) ;
-    text-transform: uppercase; /**tüm yazılar büyük harf oluşturuldu **/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    /**tüm yazılar büyük harf oluşturuldu **/
     text-align: center;
     width: 90%;
 }
@@ -100,6 +192,7 @@ ul{
     letter-spacing: 2rem;
     padding-bottom: 2rem;
 }
+
 .main-slogan {
     font-size: 1.6rem;
     color: var(--light-color);
@@ -109,15 +202,15 @@ ul{
 }
 
 .arrows {
-    margin-left:50%;
+    margin-left: 50%;
     padding-top: 4rem;
-    
+
 }
 
 .arrows span {
     display: block;
     width: 2rem;
-    height:2rem;
+    height: 2rem;
     border-bottom: 1px solid var(--light-color);
     border-right: 1px solid var(--light-color);
     transform: rotate(45deg);
@@ -127,33 +220,32 @@ ul{
 
 }
 
-.arrows span:nth-child(2){
+.arrows span:nth-child(2) {
     animation-delay: -0.3s;
 
 }
 
-.arrows span:nth-child(3){
-animation-delay: -0.6s;
+.arrows span:nth-child(3) {
+    animation-delay: -0.6s;
 }
 
 
 
 @keyframes arrows-animate {
-    0%
-    {
+    0% {
         opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
+        transform: rotate(45deg) translate(-20px, -20px);
 
     }
-    50%
-    {
+
+    50% {
         opacity: 1;
-        
+
     }
-    100%
-    {
+
+    100% {
         opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
+        transform: rotate(45deg) translate(20px, 20px);
 
     }
 
@@ -163,45 +255,50 @@ animation-delay: -0.6s;
 
 .nav {
     background-color: rgba(156, 199, 199, 0.8);
-    position:fixed ;
+    position: fixed;
     top: 0;
-    width:100%;
+    width: 100%;
     z-index: 99;
-    
+
 }
 
-.navbar{
-    display: flex; /**elemanları hareket ettirmek için**/
+.navbar {
+    display: flex;
+    /**elemanları hareket ettirmek için**/
     justify-content: space-between;
     align-items: center;
     height: 8rem;
 }
 
-.nav-list{
-    display:flex;
+.nav-list {
+    display: flex;
 
 }
+
 .nav-list li:last-child {
     padding-right: 0;
 }
-.nav-item{
-    padding:0 2rem;
+
+.nav-item {
+    padding: 0 2rem;
 }
 
-.nav-link{
+.nav-link {
     font-size: 1.6rem;
-    letter-spacing: .2rem; /**farler arası boşluk**/
+    letter-spacing: .2rem;
+    /**farler arası boşluk**/
     font-weight: 700;
     color: var(--light-color);
     transition: all .4s ease;
 
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: var(--dark-color);
 }
 
-.nav-link::after{
-    content:'';
+.nav-link::after {
+    content: '';
     display: block;
     height: .2rem;
     width: 0;
@@ -210,15 +307,15 @@ animation-delay: -0.6s;
     transition: var(--general-transition);
 }
 
-.nav-link:hover:after{
-    width:100%;
+.nav-link:hover:after {
+    width: 100%;
     opacity: 1;
-    
+
 }
 
 /**LOGO**/
 
-.logo{
+.logo {
     font-size: 4rem;
     width: 7rem;
     height: 7rem;
@@ -235,19 +332,50 @@ animation-delay: -0.6s;
     color: var(--light-color);
 }
 
-.navbar-toggler{
+.navbar-toggler {
     font-size: 2.2rem;
     position: absolute;
     right: 2.5rem;
-       z-index: 100;
-       display: none;
+    z-index: 100;
+    display: none;
 }
 
-.navbar-toggler .line{
+.navbar-toggler .line {
     width: 2.5rem;
     height: .4rem;
     background-color: var(--dark-color);
     margin: .5rem;
     transition: var(--general-transition);
-    
+
+}
+
+/**ABOUt DETAİL**/
+
+.about-detail{
+    margin-left: 4rem;
+
+}
+
+/**Services Section**/
+
+
+
+.services-detail{
+    margin-right: 4rem ;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.btn-arrows{
+    display: flex;
+    padding-top: 2rem;
+
+}
+
+#arrow-left, #arrow-right{
+    cursor: pointer;
+    margin-left: 2rem;
 }
