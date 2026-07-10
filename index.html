@@ -7,8 +7,15 @@
     <title>Genesis Web Project</title>
     <!-- FONT AWESOME KİT LİNK-->
     <script src="https://kit.fontawesome.com/f6faa0f178.js" crossorigin="anonymous"></script>
+
+    <!--FANCYBOX CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+    <!--SCROLL REVEAL JS-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <!--Custom Css-->
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
 </head>
 
 <body>
@@ -16,11 +23,11 @@
     <section id="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="main-title">GENESİS</h1>
+                <h1 class="main-title ani-fade-up">GENESİS</h1>
 
-                <p class="main-slogan"> a little space to be creative</p>
-                <div class="arrows">
-                    <a href="#">
+                <p class="main-slogan ani-delay ani-fade-up"> a little space to be creative</p>
+                <div class="arrows ani-delay-2 ani-feda-up">
+                    <a href="#about">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -39,25 +46,25 @@
                 <a href="#" class="logo">GN</a>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">HOME</a>
+                        <a href="#hero" class="nav-link">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">ABOUT</a>
+                        <a href="#about" class="nav-link">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">SERVICES</a>
+                        <a href="#services" class="nav-link">SERVICES</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">PORTFOLIO</a>
+                        <a href="#portfolio" class="nav-link">PORTFOLIO</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">TEAM</a>
+                        <a href="#team" class="nav-link">TEAM</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">BLOG</a>
+                        <a href="#blog" class="nav-link">BLOG</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">CONTACT</a>
+                        <a href="#contact" class="nav-link">CONTACT</a>
                     </li>
                 </ul>
 
@@ -76,19 +83,19 @@
         <div class="container">
             <div class="about-content sec-grid">
                 <div class="about-info">
-                    <h2 class="vertical-title">THE STORY</h2>
-                    <div class="about-detail">
+                    <h2 class="vertical-title ani-delay-2">THE STORY</h2>
+                    <div class="about-detail ani-delay ani-left">
                         <h2 class="horizontal-title">OUR MISSION</h2>
                         <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum nulla dolores quas
                             quae. Illum, eius?</p>
                         <button class="btn-general btn-light">DETAIL</button>
                     </div>
                 </div>
-                <div class="about-image">
-                <img src="./img/flower.jpg">
+                <div class="about-image ani-fade-up">
+                    <img src="./img/flower.jpg">
+                </div>
             </div>
-            </div>
-            
+
         </div>
     </section>
     <!--END About Section-->
@@ -97,13 +104,13 @@
     <section id="services" class="pri-background">
         <div class="container">
             <div class="services-content sec-grid">
-                <div class="services-image">
+                <div class="services-image ani-fade-up">
                     <img src="./img/services.jpg">
 
                 </div>
                 <div class="services-info">
-                    <h2 class="vertical-title vertical-title-right">THE SKILLS</h2>
-                    <div class="services-detail">
+                    <h2 class="vertical-title vertical-title-right ani-delay-2 ani-left">THE SKILLS</h2>
+                    <div class="services-detail ani-delay ani-right">
                         <div id="services-slider">
                             <div class="services-slide services-slide-1">
                                 <h2 class="horizontal-title light-color">OUR SERVICES 1</h2>
@@ -111,7 +118,7 @@
                                     quae. Illum, eius?</p>
                             </div>
                             <div class="services-slide services-slide-2">
-                                <h2 class="horizontal-title light-color" >OUR SERVICES 2</h2>
+                                <h2 class="horizontal-title light-color">OUR SERVICES 2</h2>
                                 <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum nulla dolores quas
                                     quae. Illum, eius?</p>
                             </div>
@@ -129,12 +136,18 @@
     <!--Potfolio Section-->
     <section id="portfolio">
         <div class="portfolio-items">
-            <a href="./img/portfolio-item1.jpg" class="portfolio-item portfolio-item-1"><span>&#9741;</span></a>
-            <a href="./img/portfolio-item2.jpg" class="portfolio-item portfolio-item-2"><span>&#9741;</span></a>
-            <a href="./img/portfolio-item3.jpg" class="portfolio-item portfolio-item-3"><span>&#9741;</span></a>
-            <a href="./img/portfolio-item4.jpg" class="portfolio-item portfolio-item-4"><span>&#9741;</span></a>
-            <a href="./img/portfolio-item5.jpg" class="portfolio-item portfolio-item-5"><span>&#9741;</span></a>
-            <a href="./img/portfolio-item6.jpg" class="portfolio-item portfolio-item-6"><span>&#9741;</span></a>
+            <a href="./img/portfolio-item1.jpg" data-fancybox="gallery"
+                class="portfolio-item portfolio-item-1 ani-fade-up"><span>&#9741;</span></a>
+            <a href="./img/portfolio-item2.jpg" data-fancybox="gallery"
+                class="portfolio-item portfolio-item-2 ani-fade-up"><span>&#9741;</span></a>
+            <a href="./img/portfolio-item3.jpg" data-fancybox="gallery"
+                class="portfolio-item portfolio-item-3 ani-fade-up"><span>&#9741;</span></a>
+            <a href="./img/portfolio-item4.jpg" data-fancybox="gallery"
+                class="portfolio-item portfolio-item-4 ani-fade-up ani-delay"><span>&#9741;</span></a>
+            <a href="./img/portfolio-item5.jpg" data-fancybox="gallery"
+                class="portfolio-item portfolio-item-5 ani-fade-up ani-delay"><span>&#9741;</span></a>
+            <a href="./img/portfolio-item6.jpg" data-fancybox="gallery"
+                class="portfolio-item portfolio-item-6 ani-fade-up ani-delay"><span>&#9741;</span></a>
         </div>
     </section>
     <!--END Potfolio Section-->
@@ -144,8 +157,8 @@
         <div class="container">
             <div class="team-content sec-grid">
                 <div class="team-info">
-                    <h2 class="vertical-title">THE TEAM</h2>
-                    <div class="team-detail">
+                    <h2 class="vertical-title ani-delay-2 ani-right">THE TEAM</h2>
+                    <div class="team-detail ani-delay ani-left">
                         <h2 class="horizontal-title">OUR PERSONAL</h2>
                         <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum nulla dolores quas
                             quae. Illum, eius?</p>
@@ -160,9 +173,12 @@
                                 <h5>Enise ASLAN</h5>
                                 <p>Designer</p>
                                 <ul class="team-social-list">
-                                    <li><a href="#"><i class="fa-brands fa-youtube" style="color: rgb(228, 230, 234);"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-linkedin" style="color: rgb(228, 230, 234);"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-twitter" style="color: rgb(228, 230, 234);"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-youtube"
+                                                style="color: rgb(228, 230, 234);"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin"
+                                                style="color: rgb(228, 230, 234);"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"
+                                                style="color: rgb(228, 230, 234);"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -174,9 +190,12 @@
                                 <h5>Betül SENOL</h5>
                                 <p>Developer</p>
                                 <ul class="team-social-list">
-                                    <li><a href="#"><i class="fa-brands fa-youtube" style="color: rgb(228, 230, 234);"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-linkedin" style="color: rgb(228, 230, 234);"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-twitter" style="color: rgb(228, 230, 234);"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-youtube"
+                                                style="color: rgb(228, 230, 234);"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin"
+                                                style="color: rgb(228, 230, 234);"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"
+                                                style="color: rgb(228, 230, 234);"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -191,7 +210,7 @@
     <section id="blog" class="pri-background">
         <div class="container">
             <div class="blog-content sec-grid">
-                <div class="latest-posts">
+                <div class="latest-posts ani-fade-up">
                     <div class="blog-post">
                         <h4>Post Title 1</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, debitis?</p>
@@ -218,9 +237,9 @@
                     </div>
                 </div>
                 <div class="blog-info">
-                    <h2 class="vertical-title vertical-title-right">THE BLOG</h2>
-                    <div class="blog-detail">
-                        <h2 class="horizontal-title">FROM US</h2>
+                    <h2 class="vertical-title vertical-title-right ani-delay-2 ani-left">THE BLOG</h2>
+                    <div class="blog-detail ani-delay ani-right">
+                        <h2 class="horizontal-title " style="color: aliceblue;">FROM US</h2>
                         <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum nulla dolores quas
                             quae. Illum, eius?</p>
                     </div>
@@ -276,6 +295,17 @@
         </div>
     </footer>
     <!--END FOOTER-->
+    <!--FANCYBOX-->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+        });
+    </script>
+
+
+
+    <!--CUSTOM JS-->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
