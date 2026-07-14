@@ -496,7 +496,10 @@ section#portfolio {
 }
 
 .team-item {
+
     position: relative;
+    overflow: hidden;
+    height: 20rem;
 }
 
 .team-item-overlay {
@@ -652,7 +655,7 @@ ul.team-social-list li:nth-child(3) a:hover {
     text-transform: uppercase;
 }
 
-.diviger {
+.divider {
     color: var(--dark-color);
     margin-left: 1rem;
     font-weight: bold;
@@ -693,6 +696,7 @@ section#contact {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgba(170, 177, 177, 0.4);
 }
 
 .contact-content h2 {
@@ -714,10 +718,15 @@ section#contact {
     padding: 2rem .5rem;
     color: var(--light-color);
     margin-bottom: 2rem;
+    font-family: var(--secondary-font);
+}
+
+#contact-label {
+    color: var(--green-color);
 }
 
 ::placeholder {
-    color: var(--green-color);
+    color: var(--light-color);
 
 }
 

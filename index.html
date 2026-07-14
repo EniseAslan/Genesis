@@ -26,8 +26,8 @@
                 <h1 class="main-title ani-fade-up">GENESİS</h1>
 
                 <p class="main-slogan ani-delay ani-fade-up"> a little space to be creative</p>
-                <div class="arrows ani-delay-2 ani-feda-up">
-                    <a href="#about">
+                <div class="arrows ani-delay-2 ani-fade-up">
+                    <a href="#about" aria-label="Scroll down to About section">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -43,36 +43,37 @@
     <header>
         <nav class="nav">
             <div class="container navbar">
-                <a href="#" class="logo">GN</a>
+                <a href="#" class="logo" aria-label="Scroll down to Hero section">GN</a>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#hero" class="nav-link">HOME</a>
+                        <a href="#hero" aria-label="Scroll down to Hero section" class="nav-link">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">ABOUT</a>
+                        <a href="#about" aria-label="Scroll down to About section" class="nav-link">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#services" class="nav-link">SERVICES</a>
+                        <a href="#services" aria-label="Scroll down to Services section" class="nav-link">SERVICES</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">PORTFOLIO</a>
+                        <a href="#portfolio" aria-label="Scroll down to Portfolio section"
+                            class="nav-link">PORTFOLIO</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#team" class="nav-link">TEAM</a>
+                        <a href="#team" aria-label="Scroll down to Team section" class="nav-link">TEAM</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#blog" class="nav-link">BLOG</a>
+                        <a href="#blog" aria-label="Scroll down to Blog section" class="nav-link">BLOG</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link">CONTACT</a>
+                        <a href="#contact" aria-label="Scroll down to Contact section" class="nav-link">CONTACT</a>
                     </li>
                 </ul>
 
-                <div class="navbar-toggler">
+                <button class="navbar-toggler" aria-label="Toggle navigation menu" type="button">
                     <div class="line line1"></div>
                     <div class="line line2"></div>
                     <div class="line line3"></div>
-                </div>
+                </button>
             </div>
         </nav>
     </header>
@@ -92,7 +93,7 @@
                     </div>
                 </div>
                 <div class="about-image ani-fade-up">
-                    <img src="./img/flower.jpg">
+                    <img src="./img/flower.jpg" alt="flower">
                 </div>
             </div>
 
@@ -105,7 +106,7 @@
         <div class="container">
             <div class="services-content sec-grid">
                 <div class="services-image ani-fade-up">
-                    <img src="./img/services.jpg">
+                    <img src="./img/services.jpg" alt="light bulb">
 
                 </div>
                 <div class="services-info">
@@ -130,8 +131,10 @@
                             </div>
                         </div>
                         <div class="btn-arrows">
-                            <div id="arrow-left" class="btn-general btn-dark">&#8656;</div>
-                            <div id="arrow-right" class="btn-general btn-dark">&#8658;</div>
+                            <button id="arrow-left" class="btn-general btn-dark" aria-label="Previous slide"
+                                type="button">&#8656;</button>
+                            <button id="arrow-right" class="btn-general btn-dark" aria-label="Next slide"
+                                type="button">&#8658;</button>
                         </div>
                     </div>
                 </div>
@@ -142,17 +145,17 @@
     <!--Potfolio Section-->
     <section id="portfolio">
         <div class="portfolio-items">
-            <a href="./img/portfolio-item1.jpg" data-fancybox="gallery"
+            <a href="./img/portfolio-item1.jpg" alt="portfolio item 1" data-fancybox="gallery"
                 class="portfolio-item portfolio-item-1 ani-fade-up"><span>&#9741;</span></a>
-            <a href="./img/portfolio-item2.jpg" data-fancybox="gallery"
+            <a href="./img/portfolio-item2.jpg" alt="portfolio item 2" data-fancybox="gallery"
                 class="portfolio-item portfolio-item-2 ani-fade-up"><span>&#9741;</span></a>
-            <a href="./img/portfolio-item3.jpg" data-fancybox="gallery"
+            <a href="./img/portfolio-item3.jpg" alt="portfolio item 3" data-fancybox="gallery"
                 class="portfolio-item portfolio-item-3 ani-fade-up"><span>&#9741;</span></a>
-            <a href="./img/portfolio-item4.jpg" data-fancybox="gallery"
+            <a href="./img/portfolio-item4.jpg" alt="portfolio item 4" data-fancybox="gallery"
                 class="portfolio-item portfolio-item-4 ani-fade-up ani-delay"><span>&#9741;</span></a>
-            <a href="./img/portfolio-item5.jpg" data-fancybox="gallery"
+            <a href="./img/portfolio-item5.jpg" alt="portfolio item 5" data-fancybox="gallery"
                 class="portfolio-item portfolio-item-5 ani-fade-up ani-delay"><span>&#9741;</span></a>
-            <a href="./img/portfolio-item6.jpg" data-fancybox="gallery"
+            <a href="./img/portfolio-item6.jpg" alt="portfolio item 6" data-fancybox="gallery"
                 class="portfolio-item portfolio-item-6 ani-fade-up ani-delay"><span>&#9741;</span></a>
         </div>
     </section>
@@ -173,34 +176,34 @@
                 </div>
                 <div class="team-items">
                     <div class="team-item team-item-1">
-                        <img src="./img/team-item1.jpg">
+                        <img src="./img/anna-lee.jpg" alt="anna lee image">
                         <div class="team-item-overlay">
                             <div class="team-item-info">
-                                <h5>Enise ASLAN</h5>
+                                <h5>Anna Lee</h5>
                                 <p>Designer</p>
                                 <ul class="team-social-list">
-                                    <li><a href="#"><i class="fa-brands fa-youtube"
+                                    <li><a href="#"><i class="fa-brands fa-youtube" aria-label="Youtube"
                                                 style="color: rgb(228, 230, 234);"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-linkedin"
+                                    <li><a href="#"><i class="fa-brands fa-linkedin" aria-label="Linkedin"
                                                 style="color: rgb(228, 230, 234);"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-twitter"
+                                    <li><a href="#"><i class="fa-brands fa-twitter" aria-label="Twitter"
                                                 style="color: rgb(228, 230, 234);"></i></a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="team-item team-item-2">
-                        <img src="./img/team-item2.jpg">
+                        <img src="./img/jason-dawn.jpg" alt="jason down image">
                         <div class="team-item-overlay">
                             <div class="team-item-info">
-                                <h5>Betül SENOL</h5>
+                                <h5>Jason Dawn</h5>
                                 <p>Developer</p>
                                 <ul class="team-social-list">
-                                    <li><a href="#"><i class="fa-brands fa-youtube"
+                                    <li><a href="#"><i class="fa-brands fa-youtube" aria-label="Youtube"
                                                 style="color: rgb(228, 230, 234);"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-linkedin"
+                                    <li><a href="#"><i class="fa-brands fa-linkedin" aria-label="Linkedin"
                                                 style="color: rgb(228, 230, 234);"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-twitter"
+                                    <li><a href="#"><i class="fa-brands fa-twitter" aria-label="Twitter"
                                                 style="color: rgb(228, 230, 234);"></i></a></li>
                                 </ul>
                             </div>
@@ -222,7 +225,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, debitis?</p>
                         <a href="#">Read More >></a>
                         <div class="post-meta">
-                            <img src="./img/team-item1.jpg">
+                            <img src="./img/john-doe.jpg" alt="john doe image">
                             <div class="divider">&#124;</div>
                             <p class="author">John Doe</p>
                             <div class="divider">&#124;</div>
@@ -234,7 +237,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, debitis?</p>
                         <a href="#">Read More >></a>
                         <div class="post-meta">
-                            <img src="./img/team-item2.jpg">
+                            <img src="./img/louis-smith.jpg" alt="louis smith image">
                             <div class="divider">&#124;</div>
                             <p class="author">Louis Smith</p>
                             <div class="divider">&#124;</div>
@@ -261,11 +264,20 @@
         <div class="container">
             <div class="contact-content">
                 <h2>Get In Touch With Us</h2>
-                <form>
-                    <input type="text" class="name" placeholder="Your Name">
-                    <input type="email" class="email" placeholder="Your E-mail">
-                    <textarea class="message" placeholder="Your Massage"></textarea>
-                    <button class="btn-general btn-light">SEND</button>
+                <form action=" " method="POST">
+                    <div class="form-group">
+                        <label id="contact-label" for="name">Name</label>
+                        <input type="text" id="name" name="name" class="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label id="contact-label" for="email">E-mail</label>
+                        <input type="email" id="email" name="email" class="email" placeholder="Your E-mail">
+                    </div>
+                    <div class="form-group">
+                        <label id="contact-label" for="message">Message</label>
+                        <textarea id="message" name="message" class="message" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="button" class="btn-general btn-light" aria-label="Send to message">SEND</button>
                 </form>
             </div>
         </div>
@@ -283,18 +295,19 @@
                     <h4>Follow Us</h4>
                     <ul class="social-list">
                         <li>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-twitter" aria-label="Twitter"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-github " aria-label="Github"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-youtube" aria-label="Youtube"></i></a>
                         </li>
                     </ul>
                 </div>
                 <div class="back-top">
-                    <a href="#"> <i class="fa-solid fa-angle-up fa-2xl" style="color: rgb(228, 230, 234);"></i></a>
+                    <a href="#"> <i class="fa-solid fa-angle-up fa-2xl" aria-label="back to top"
+                            style="color: rgb(228, 230, 234);"></i></a>
                 </div>
 
             </div>
